@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de pessoas</title>
+    <link rel="stylesheet" href="tabela.css">
+</head>
+<body>
+    <header>
+        <a href="inicial.html">Adicionar Pessoas</a>
+        <h2>Tabela de pessoas</h2>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                <th>Nome</th>
+                <th>Cargo</th>
+                <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="resultado"></tbody>
+        </table>
+    </main>
+
+    <br>
+    <br>
+
+    <div>
+        <label>Nome:</label>
+        <input type="text" id="nome">
+        <label>Cargo</label>
+        <select name="" id="cargo">
+            <option value="" disabled selected hidden>Escolha um abaixo:</option>
+                <option value="Estoquista">Estoquista</option>
+                <option value="Atendente">Atendente</option>
+                <option value="Contador">Contador</option>
+        </select>
+        <button>Salvar</button>
+    </div>
+    
+    <script src="tabela.js"></script>
+</body>
+</html>
