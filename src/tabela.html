@@ -11,6 +11,14 @@
         <a href="inicial.html">Adicionar Pessoas</a>
         <h2>Tabela de pessoas</h2>
     </header>
+    <hr>
+    <label for="buscador">Buscador:</label>
+<input type="text" id="buscador" placeholder="Digite um nome ou cargo">
+<button id="buscar">Buscar</button>
+
+
+    <br>
+    <br>
     <main>
         <table>
             <thead>
@@ -29,15 +37,15 @@
 
     <div>
         <label>Nome:</label>
-        <input type="text" id="nome">
+        <input type="text" id="nome" disabled>
         <label>Cargo</label>
-        <select name="" id="cargo">
+        <select name="" id="cargo" disabled>
             <option value="" disabled selected hidden>Escolha um abaixo:</option>
                 <option value="Estoquista">Estoquista</option>
                 <option value="Atendente">Atendente</option>
                 <option value="Contador">Contador</option>
         </select>
-        <button>Salvar</button>
+        <button disabled id="salvar">Salvar</button>
     </div>
     
     <script src="tabela.js"></script>
